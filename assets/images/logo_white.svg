@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGradW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3D6"/>
+      <stop offset="40%" stop-color="#ECC558"/>
+      <stop offset="80%" stop-color="#C59B27"/>
+      <stop offset="100%" stop-color="#997519"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Golden Circular Arch / Sun Halo -->
+  <path d="M 120,200 A 150,150 0 1,1 380,200" fill="none" stroke="url(#goldGradW)" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Palm Tree on the right -->
+  <!-- Trunk -->
+  <path d="M 355,200 Q 350,140 342,100 Q 346,140 358,200 Z" fill="url(#goldGradW)"/>
+  <!-- Fronds -->
+  <path d="M 342,100 Q 340,65 330,55 Q 338,75 342,100 Z" fill="url(#goldGradW)"/>
+  <path d="M 342,100 Q 348,65 358,55 Q 350,75 342,100 Z" fill="url(#goldGradW)"/>
+  <path d="M 342,100 Q 315,75 295,85 Q 320,95 342,100 Z" fill="url(#goldGradW)"/>
+  <path d="M 342,100 Q 375,75 395,85 Q 370,95 342,100 Z" fill="url(#goldGradW)"/>
+  <path d="M 342,100 Q 310,105 285,120 Q 320,118 342,100 Z" fill="url(#goldGradW)"/>
+  <path d="M 342,100 Q 380,105 405,120 Q 375,118 342,100 Z" fill="url(#goldGradW)"/>
+
+  <!-- Luxury House Roof & Structure -->
+  <path d="M 150,195 L 250,90 L 350,195 L 330,195 L 250,115 L 170,195 Z" fill="url(#goldGradW)"/>
+  <path d="M 250,128 L 315,195 L 302,195 L 250,140 L 198,195 L 185,195 Z" fill="url(#goldGradW)"/>
+  <polygon points="295,125 312,125 312,165 295,147" fill="url(#goldGradW)"/>
+
+  <!-- Arched Attic Window -->
+  <path d="M 238,155 Q 250,140 262,155 L 262,175 L 238,175 Z" fill="#FFFFFF"/>
+  <line x1="250" y1="145" x2="250" y2="175" stroke="url(#goldGradW)" stroke-width="2"/>
+  <line x1="238" y1="162" x2="262" y2="162" stroke="url(#goldGradW)" stroke-width="2"/>
+
+  <!-- Waves -->
+  <path d="M 120,225 Q 170,225 215,210 Q 280,190 380,210 Q 330,198 250,205 Q 180,210 120,225 Z" fill="url(#goldGradW)"/>
+  <path d="M 100,245 Q 160,248 205,225 Q 260,198 345,220 Q 380,230 400,228 Q 360,215 310,210 Q 240,205 185,228 Q 140,246 100,245 Z" fill="#FFFFFF"/>
+  <path d="M 125,260 Q 180,265 225,248 Q 280,228 355,240 Q 310,232 250,235 Q 185,248 125,260 Z" fill="#FFFFFF" opacity="0.8"/>
+
+  <!-- Typography: PRIME -->
+  <text x="250" y="335" 
+        font-family="'Playfair Display', 'Cinzel', Georgia, serif" 
+        font-size="68" 
+        font-weight="800" 
+        letter-spacing="9" 
+        fill="#FFFFFF" 
+        text-anchor="middle">PRIME</text>
+
+  <!-- Typography: — SUITE — -->
+  <line x1="120" y1="365" x2="185" y2="365" stroke="url(#goldGradW)" stroke-width="4" stroke-linecap="round"/>
+  <text x="250" y="375" 
+        font-family="'Cinzel', 'Playfair Display', 'Plus Jakarta Sans', sans-serif" 
+        font-size="34" 
+        font-weight="700" 
+        letter-spacing="14" 
+        fill="url(#goldGradW)" 
+        text-anchor="middle">SUITE</text>
+  <line x1="315" y1="365" x2="380" y2="365" stroke="url(#goldGradW)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Typography: AIR BnB RENTALS -->
+  <text x="250" y="420" 
+        font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" 
+        font-size="20" 
+        font-weight="700" 
+        letter-spacing="6" 
+        fill="#E2E8F0" 
+        text-anchor="middle">AIR BnB RENTALS</text>
+</svg>
