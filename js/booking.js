@@ -1,15 +1,15 @@
-/**
+﻿/**
  * PRIME SUITE - AIR BnB RENTALS
  * Direct Reservation & WhatsApp Dispatcher
  * LOCATION: Anaji behind Nhyira hotel
- * CONTACTS: 0550638015 / 0547238675
+ * CONTACTS: 0557060765 / 0547238675
  */
 
 (function () {
   'use strict';
 
   // Primary contacts from flyer & user request
-  const PHONE_1 = '233550638015'; // 0550638015
+  const PHONE_1 = '233557060765'; // 0557060765
   const PHONE_2 = '233547238675'; // 0547238675
 
   // DOM Elements
@@ -134,3 +134,4 @@
     sendWhatsAppBooking
   };
 })();
+

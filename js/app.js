@@ -1,9 +1,9 @@
-/**
+﻿/**
  * PRIME SUITE - AIR BnB RENTALS
  * Main Application Script
  * Features: Mobile Nav, Lightbox Gallery, Category Filtering, Sticky Nav
  * LOCATION: Anaji behind Nhyira hotel
- * CONTACTS: 0550638015 / 0547238675
+ * CONTACTS: 0557060765 / 0547238675
  */
 
 (function () {
@@ -55,9 +55,9 @@
       id: 'flyer',
       category: 'flyer',
       title: 'Official Prime Suite Flyer',
-      subtitle: 'Location: Anaji behind Nhyira hotel | Contacts: 0550638015 / 0547238675',
+      subtitle: 'Location: Anaji behind Nhyira hotel | Contacts: 0557060765 / 0547238675',
       src: 'assets/images/prime_suite_flyer.png',
-      features: ['YOUR COMFORT OUR PRIORITY', 'Feel at home, anywhere.', 'Contacts: 0550638015 / 0547238675']
+      features: ['YOUR COMFORT OUR PRIORITY', 'Feel at home, anywhere.', 'Contacts: 0557060765 / 0547238675']
     }
   ];
 
@@ -113,7 +113,7 @@
   function openFlyerModal() {
     if (lightboxImg) lightboxImg.src = 'assets/images/prime_suite_flyer.png';
     if (lightboxTitle) lightboxTitle.textContent = 'Official Prime Suite Flyer';
-    if (lightboxDesc) lightboxDesc.textContent = 'Location: Anaji behind Nhyira hotel • Contacts: 0550638015 / 0547238675';
+    if (lightboxDesc) lightboxDesc.textContent = 'Location: Anaji behind Nhyira hotel â€¢ Contacts: 0557060765 / 0547238675';
 
     if (lightboxModal) {
       lightboxModal.classList.add('active');
@@ -206,3 +206,4 @@
 
   window.openFlyerModal = openFlyerModal;
 })();
+
