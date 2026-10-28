@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,11 +8,11 @@
 
   <!-- SEO & Social Meta -->
   <meta name="description"
-    content="Prime Suite Air BnB Rentals. Your Comfort Our Priority. Feel at home, anywhere. Location: Anaji behind Nhyira hotel. Contacts: 0557060765 / 0547238675.">
-  <meta property="og:title" content="Prime Suite - Air BnB Rentals">
+    content="Prime Suite Air BnB Rentals in Anaji behind Nhyira hotel. Choose between Room 1 and Room 2. Your Comfort Our Priority. Contacts: 0547238675 / 0550638015.">
+  <meta property="og:title" content="Prime Suite - Air BnB Rentals | Anaji behind Nhyira hotel">
   <meta property="og:description"
-    content="Your Comfort Our Priority. Enjoy a cozy and elegant stay in a serene environment with all the amenities you need. Location: Anaji behind Nhyira hotel.">
-  <meta property="og:image" content="assets/images/exterior_villa.jpg">
+    content="Your Comfort Our Priority. Feel at home, anywhere. Room 1 &amp; Room 2. Location: Anaji behind Nhyira hotel. Contacts: 0547238675 / 0550638015.">
+  <meta property="og:image" content="assets/images/suite2/suite2_living_room_main.jpg">
   <meta property="og:type" content="website">
 
   <!-- Favicon -->
@@ -30,23 +30,27 @@
 <body>
 
   <!-- ==========================================================================
-       TOP NOTIFICATION & CONTACT BAR
+       TOP CONTACT BAR
        ========================================================================== -->
   <div class="top-bar" id="topBar">
     <div class="container top-bar-inner">
       <div class="top-bar-location">
         <i class="fa-solid fa-location-dot"></i>
-        <span><strong>LOCATION:</strong> Anaji behind Nhyira hotel</span>
+        <span><strong>LOCATION:</strong> <span class="property-location-text">Anaji behind Nhyira hotel</span></span>
+      </div>
+      <div class="top-bar-perk">
+        <i class="fa-solid fa-car-side"></i>
+        <span>Car Rental Available</span>
       </div>
       <div class="top-bar-contacts">
         <div class="top-hotline">
           <i class="fa-solid fa-phone"></i>
           <span>CONTACTS:</span>
-          <a href="tel:+233557060765" id="topPhone1">0557060765</a>
+          <a href="tel:+233547238675" id="topPhone1">0547238675</a>
           <span>/</span>
-          <a href="tel:+233547238675" id="topPhone2">0547238675</a>
+          <a href="tel:+233550638015" id="topPhone2">0550638015</a>
         </div>
-        <a href="https://wa.me/233557060765" target="_blank" rel="noopener noreferrer" class="top-whatsapp-btn"
+        <a href="https://wa.me/233547238675" target="_blank" rel="noopener noreferrer" class="top-whatsapp-btn"
           id="topWhatsappBtn" aria-label="Chat with Prime Suite on WhatsApp">
           <i class="fa-brands fa-whatsapp"></i>
           <span>WhatsApp Chat</span>
@@ -56,7 +60,7 @@
   </div>
 
   <!-- ==========================================================================
-       MAIN NAVIGATION HEADER
+       MAIN NAVIGATION HEADER (STREAMLINED & CLEAN)
        ========================================================================== -->
   <header class="main-header" id="mainHeader">
     <div class="container nav-container">
@@ -68,14 +72,13 @@
         </div>
       </a>
 
+      <!-- Streamlined Nav Links -->
       <nav class="nav-menu" id="navMenu">
         <a href="#home" class="nav-link active">Home</a>
-        <a href="#spaces" class="nav-link">The House</a>
+        <a href="#rooms" class="nav-link">The Rooms</a>
         <a href="#amenities" class="nav-link">Amenities</a>
-        <a href="#perfect-for" class="nav-link">Perfect For</a>
         <a href="#booking" class="nav-link">Book Now</a>
         <a href="#location" class="nav-link">Location</a>
-        <a href="#flyer-section" class="nav-link">Flyer</a>
       </nav>
 
       <div style="display: flex; align-items: center; gap: 1rem;">
@@ -94,7 +97,7 @@
   </header>
 
   <!-- ==========================================================================
-       HERO SECTION (HOME PAGE - NO PHOTOS HERE)
+       HERO SECTION
        ========================================================================== -->
   <section class="hero-section" id="home">
     <div class="hero-bg-overlay"></div>
@@ -104,7 +107,7 @@
         <div class="hero-content">
           <div class="hero-badge">
             <i class="fa-solid fa-star"></i>
-            <span>AIR BnB RENTALS</span>
+            <span>AIR BnB RENTALS • 2 ROOMS • ANAJI</span>
           </div>
 
           <h1 class="hero-title">
@@ -115,12 +118,14 @@
           <div class="hero-script-tag">Feel at home, anywhere.</div>
 
           <p class="hero-description">
-            Enjoy a cozy and elegant stay in a serene environment with all the amenities you need.
+            Experience serene and private accommodation in Anaji. We offer two distinct,
+            fully air-conditioned private units: <strong>Room 1</strong> and
+            <strong>Room 2</strong>.
           </p>
 
           <div class="hero-location-pill">
             <i class="fa-solid fa-location-dot" style="color: var(--color-gold);"></i>
-            <span><strong>LOCATION:</strong> Anaji behind Nhyira hotel</span>
+            <span><strong>LOCATION:</strong> <span class="property-location-text">Anaji behind Nhyira hotel</span></span>
           </div>
 
           <!-- Highlighted Core Amenities from Flyer -->
@@ -139,178 +144,421 @@
             </span>
             <span class="hero-pill">
               <span class="icon"><i class="fa-solid fa-shield-halved"></i></span>
-              <span>Secure & Private</span>
+              <span>Secure &amp; Private</span>
             </span>
+            <span class="hero-pill">
+              <span class="icon"><i class="fa-solid fa-snowflake"></i></span>
+              <span>Air Conditioned</span>
+            </span>
+          </div>
+
+          <!-- Actions -->
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+            <a href="#rooms" class="btn-suite-filter"
+              style="background: rgba(255,255,255,0.12); color: #FFF; border-color: rgba(212,175,55,0.4);">
+              <i class="fa-solid fa-door-open"></i> View The Rooms
+            </a>
+            <a href="#booking" class="btn-suite-reserve"
+              style="background: linear-gradient(135deg, #D4AF37 0%, #C59B27 100%); color: #071324;">
+              <i class="fa-solid fa-calendar-check"></i> Book on WhatsApp
+            </a>
           </div>
         </div>
 
-        <!-- Right Hero Presentation Card (Clean Luxury Branding Without Photos) -->
-        <div class="hero-brand-card">
-          <div class="hero-brand-logo-wrap">
-            <img src="assets/images/logo_white.svg" alt="Prime Suite Logo">
-          </div>
-          <h3>PRIME SUITE</h3>
-          <div class="brand-sub">AIR BnB RENTALS</div>
+        <!-- Right Hero Interactive Showcase Slideshow -->
+        <div class="hero-slider-container">
+          <div class="hero-slider-wrap" id="heroSlider" aria-label="Prime Suite Photo Showcase" role="region">
+            <div class="hero-slider-track" id="heroSliderTrack">
 
-          <div class="hero-brand-features">
-            <div class="hero-brand-item">
+              <!-- Slide 1: Living Room -->
+              <div class="hero-slide active" data-room="room2" data-index="0">
+                <img src="assets/images/suite2/suite2_living_room_main.jpg"
+                  alt="Prime Suite Living Room" class="hero-slide-img">
+                <div class="hero-slide-overlay">
+                  <div class="hero-slide-top">
+                    <span class="hero-slide-tag tag-room2">
+                      <i class="fa-solid fa-couch"></i> Living Room
+                    </span>
+                    <span class="hero-slide-counter">01 / 04</span>
+                  </div>
+                  <div class="hero-slide-bottom">
+                    <h3 class="hero-slide-title">Living Room</h3>
+                    <div class="hero-slide-actions">
+                      <a href="#booking" class="btn-slide-book" data-book-room="room2">
+                        <i class="fa-solid fa-calendar-check"></i> Book Now
+                      </a>
+                      <a href="#rooms" class="btn-slide-info">
+                        <i class="fa-solid fa-circle-info"></i> View Rooms
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Master Bedroom -->
+              <div class="hero-slide" data-room="room2" data-index="1">
+                <img src="assets/images/suite2/suite2_bedroom_master_king.jpg" alt="Prime Suite Master Bedroom"
+                  class="hero-slide-img">
+                <div class="hero-slide-overlay">
+                  <div class="hero-slide-top">
+                    <span class="hero-slide-tag tag-room2">
+                      <i class="fa-solid fa-bed"></i> Master Bedroom
+                    </span>
+                    <span class="hero-slide-counter">02 / 04</span>
+                  </div>
+                  <div class="hero-slide-bottom">
+                    <h3 class="hero-slide-title">Master Bedroom</h3>
+                    <div class="hero-slide-actions">
+                      <a href="#booking" class="btn-slide-book" data-book-room="room2">
+                        <i class="fa-solid fa-calendar-check"></i> Book Now
+                      </a>
+                      <a href="#rooms" class="btn-slide-info">
+                        <i class="fa-solid fa-circle-info"></i> View Rooms
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Dining Area -->
+              <div class="hero-slide" data-room="room2" data-index="2">
+                <img src="assets/images/suite2/suite2_dining_main.jpg" alt="Prime Suite Dining Area"
+                  class="hero-slide-img">
+                <div class="hero-slide-overlay">
+                  <div class="hero-slide-top">
+                    <span class="hero-slide-tag tag-room2">
+                      <i class="fa-solid fa-utensils"></i> Dining Area
+                    </span>
+                    <span class="hero-slide-counter">03 / 04</span>
+                  </div>
+                  <div class="hero-slide-bottom">
+                    <h3 class="hero-slide-title">Dining Area</h3>
+                    <div class="hero-slide-actions">
+                      <a href="#booking" class="btn-slide-book" data-book-room="room2">
+                        <i class="fa-solid fa-calendar-check"></i> Book Now
+                      </a>
+                      <a href="#rooms" class="btn-slide-info">
+                        <i class="fa-solid fa-circle-info"></i> View Rooms
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4: Exterior & Grounds -->
+              <div class="hero-slide" data-room="shared" data-index="3">
+                <img src="assets/images/exterior_villa.jpg" alt="Prime Suite Villa Exterior and Paved Parking"
+                  class="hero-slide-img">
+                <div class="hero-slide-overlay">
+                  <div class="hero-slide-top">
+                    <span class="hero-slide-tag tag-villa">
+                      <i class="fa-solid fa-shield-halved"></i> Property Grounds
+                    </span>
+                    <span class="hero-slide-counter">04 / 04</span>
+                  </div>
+                  <div class="hero-slide-bottom">
+                    <h3 class="hero-slide-title">Exterior &amp; Paved Parking</h3>
+                    <div class="hero-slide-actions">
+                      <a href="#booking" class="btn-slide-book" data-book-room="both">
+                        <i class="fa-solid fa-calendar-check"></i> Book Now
+                      </a>
+                      <a href="#location" class="btn-slide-info">
+                        <i class="fa-solid fa-location-dot"></i> Location
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Slider Navigation Arrows -->
+            <button class="slider-nav-btn prev" id="sliderPrev" aria-label="Previous Slide">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="slider-nav-btn next" id="sliderNext" aria-label="Next Slide">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Slider Controls Bar -->
+            <div class="slider-controls-bar">
+              <div class="slider-dots" id="sliderDots"></div>
+              <button class="slider-pause-btn" id="sliderPauseBtn" aria-label="Pause slideshow">
+                <i class="fa-solid fa-pause"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Bottom Mini Showcase Pill Bar -->
+          <div class="hero-slider-footer">
+            <div class="slider-footer-item">
+              <i class="fa-solid fa-camera"></i>
+              <span>100% Real Pictures</span>
+            </div>
+            <div class="slider-footer-item">
               <i class="fa-solid fa-location-dot"></i>
-              <span>Anaji behind Nhyira hotel</span>
+              <span class="property-location-text">Anaji behind Nhyira hotel</span>
             </div>
-            <div class="hero-brand-item">
+            <div class="slider-footer-item">
               <i class="fa-solid fa-phone"></i>
-              <span>0557060765 / 0547238675</span>
-            </div>
-            <div class="hero-brand-item">
-              <i class="fa-solid fa-house"></i>
-              <span>Private Residence Rental</span>
+              <span>0547238675 / 0550638015</span>
             </div>
           </div>
-
-          <a href="#booking" class="gold-circle-cta" aria-label="Book Now and experience comfort like never before">
-            <span class="txt-book">BOOK</span>
-            <span class="txt-now">NOW</span>
-            <span class="txt-exp">and experience comfort like never before!</span>
-          </a>
         </div>
       </div>
     </div>
   </section>
 
-
-
   <!-- ==========================================================================
-       WHAT THE HOUSE COMES WITH (ALL PHOTOS OF THE HOUSE KEPT AS THEY ARE)
+       THE ROOMS SECTION (STREAMLINED 2-SUITE SHOWCASE + VILLA RESIDENCE)
        ========================================================================== -->
-  <section class="section spaces-section" id="spaces">
+  <section class="section suites-overview" id="rooms">
     <div class="container">
       <div class="section-header">
         <div class="section-subtitle-badge">
-          <i class="fa-solid fa-house"></i> Inside Prime Suite
+          <i class="fa-solid fa-bed"></i> Accommodations
         </div>
-        <h2 class="section-title">What The House Comes With</h2>
+        <h2 class="section-title">Our Rooms</h2>
         <span class="cursive-accent">Feel at home, anywhere.</span>
         <p class="section-description">
-          Prime Suite is a complete private residence. When you book, Prime Suite and all its spaces are
-          exclusively yours to enjoy in total privacy and comfort.
+          Prime Suite features two separate, fully furnished, air-conditioned private rooms in Anaji.
+          Choose Room 1, Room 2, or reserve both together.
         </p>
       </div>
 
-      <!-- Filter Tabs -->
-      <div class="spaces-tabs">
-        <button class="space-tab-btn active" data-filter="all">All Spaces</button>
-        <button class="space-tab-btn" data-filter="bedrooms">Bedrooms</button>
-        <button class="space-tab-btn" data-filter="living">Living & Dining</button>
-        <button class="space-tab-btn" data-filter="exterior">Exterior</button>
+      <!-- 2 Clean Room Feature Cards -->
+      <div class="suites-showcase-grid">
+
+        <!-- ================= ROOM 1 ================= -->
+        <article class="suite-feature-card" id="suiteRoom1">
+          <div class="suite-card-ribbon"
+            style="background: linear-gradient(135deg, #10223A 0%, #1E3E62 100%); color: var(--color-gold-light); border: 1px solid var(--color-gold);">
+            <i class="fa-solid fa-bed"></i> Room 1
+          </div>
+
+          <div class="suite-card-cover">
+            <img src="assets/images/bedroom_master.jpg" alt="Room 1 Master Bedroom" class="suite-cover-img suite-cover-room1"
+              loading="lazy">
+            <div class="suite-card-cover-overlay">
+              <span class="suite-badge-pill suite1">
+                <i class="fa-solid fa-door-open"></i> Room 1
+              </span>
+              <h3 class="suite-card-cover-title">Room 1</h3>
+            </div>
+          </div>
+
+          <div class="suite-card-body">
+            <div class="suite-card-subtitle">2 Bedrooms • Living Room • Dining Area</div>
+            <p class="suite-card-desc">
+              Cozy, restful, and peaceful private suite with two air-conditioned bedrooms, dedicated living room with comfortable seating and TV, and a 4-seater dining space.
+            </p>
+
+            <div class="suite-spec-grid">
+              <div class="suite-spec-item">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 Bedrooms (Queen Beds)</span>
+              </div>
+              <div class="suite-spec-item">
+                <i class="fa-solid fa-couch"></i>
+                <span>Private Living Room &amp; TV</span>
+              </div>
+              <div class="suite-spec-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>4-Seater Dining Area</span>
+              </div>
+              <div class="suite-spec-item">
+                <i class="fa-solid fa-snowflake"></i>
+                <span>Air Conditioned Rooms</span>
+              </div>
+              <div class="suite-spec-item">
+                <i class="fa-solid fa-wifi"></i>
+                <span>Free High-Speed Wi-Fi</span>
+              </div>
+              <div class="suite-spec-item">
+                <i class="fa-solid fa-square-parking"></i>
+                <span>Ample Paved Parking</span>
+              </div>
+            </div>
+
+            <!-- Clickable Mini Gallery Row that connects to the Lightbox -->
+            <div class="suite-gallery-preview">
+              <span class="suite-gallery-label">
+                <i class="fa-solid fa-images"></i> Click to preview photos:
+              </span>
+              <div class="suite-thumb-row">
+                <button type="button" class="suite-thumb-btn" onclick="window.openGalleryLightbox(14)"
+                  title="View Master Bedroom in Lightbox">
+                  <img src="assets/images/bedroom_master.jpg" alt="Master Bedroom thumbnail">
+                  <span class="thumb-caption">Master Bed</span>
+                </button>
+                <button type="button" class="suite-thumb-btn" onclick="window.openGalleryLightbox(15)"
+                  title="View Bedroom 2 in Lightbox">
+                  <img src="assets/images/bedroom_second.jpg" alt="Bedroom 2 thumbnail">
+                  <span class="thumb-caption">Bedroom 2</span>
+                </button>
+                <button type="button" class="suite-thumb-btn" onclick="window.openGalleryLightbox(17)"
+                  title="View Living Room in Lightbox">
+                  <img src="assets/images/living_room.jpg" alt="Living Room thumbnail">
+                  <span class="thumb-caption">Living Room</span>
+                </button>
+                <button type="button" class="suite-thumb-btn" onclick="window.openGalleryLightbox(16)"
+                  title="View Dining Area in Lightbox">
+                  <img src="assets/images/dining_area.jpg" alt="Dining Area thumbnail">
+                  <span class="thumb-caption">Dining</span>
+                </button>
+                <button type="button" class="suite-thumb-btn" onclick="window.openGalleryLightbox(18)"
+                  title="View Property Grounds in Lightbox">
+                  <img src="assets/images/exterior_villa.jpg" alt="Property Grounds thumbnail">
+                  <span class="thumb-caption">Grounds</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="suite-card-actions">
+              <button class="btn-suite-filter" onclick="window.openGalleryLightbox(14)">
+                <i class="fa-solid fa-images"></i> View Photos
+              </button>
+              <button class="btn-suite-reserve" data-book-room="room1">
+                <i class="fa-brands fa-whatsapp"></i> Book Room 1
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= ROOM 2 ================= -->
+        <article class="suite-feature-card featured-suite" id="suiteRoom2">
+          <div class="suite-card-ribbon">
+            <i class="fa-solid fa-bed"></i> Room 2
+          </div>
+
+          <div class="suite-card-cover">
+            <img src="assets/images/suite2/suite2_living_room_main.jpg" alt="Room 2 Living Room"
+              class="suite-cover-img suite-cover-room2" loading="lazy">
+            <div class="suite-card-cover-overlay">
+              <span class="suite-badge-pill suite2">
+                <i class="fa-solid fa-door-open"></i> Room 2
+              </span>
+              <h3 class="suite-card-cover-title">Room 2</h3>
+            </div>
+          </div>
+
+          <div class="suite-card-body">
+            <div class="suite-card-subtitle">2 Bedrooms • Living Room • Dining Area</div>
+            <p class="suite-card-desc">
+              Spacious, fully air-conditioned suite with Italian black marble floors, chandelier dining, private living room with TV wall and soundbar, walk-in rainfall shower, and two king bedrooms.
+            </p>
+
+            <div class="suite-spec-grid">
+              <div class="suite-spec-item">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 Bedrooms (King Beds)</span>
+              </div>
+              <div class="suite-spec-item">
+                <i class="fa-solid fa-tv"></i>
+                <span>In-Room Mounted TVs</span>
+              </div>
+              <div class="suite-spec-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>6-Seater Dining Area</span>
+              </div>
+              <div class="suite-spec-item">
+                <i class="fa-solid fa-shower"></i>
+                <span>Rainfall Walk-In Shower</span>
+              </div>
+              <div class="suite-spec-item">
+                <i class="fa-solid fa-snowflake"></i>
+                <span>Dedicated Refrigerator</span>
+              </div>
+              <div class="suite-spec-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Private &amp; Air Conditioned</span>
+              </div>
+            </div>
+
+            <!-- Clickable Mini Gallery Row that connects to Lightbox -->
+            <div class="suite-gallery-preview">
+              <span class="suite-gallery-label">
+                <i class="fa-solid fa-images"></i> Click to preview photos:
+              </span>
+              <div class="suite-thumb-row">
+                <button type="button" class="suite-thumb-btn" onclick="window.openGalleryLightbox(0)"
+                  title="View Living Room in Lightbox">
+                  <img src="assets/images/suite2/suite2_living_room_main.jpg" alt="Living Room thumbnail">
+                  <span class="thumb-caption">Living Room</span>
+                </button>
+                <button type="button" class="suite-thumb-btn" onclick="window.openGalleryLightbox(1)"
+                  title="View Master Bedroom in Lightbox">
+                  <img src="assets/images/suite2/suite2_bedroom_master_king.jpg" alt="Master Bedroom thumbnail">
+                  <span class="thumb-caption">Master Bed</span>
+                </button>
+                <button type="button" class="suite-thumb-btn" onclick="window.openGalleryLightbox(2)"
+                  title="View Bedroom 2 in Lightbox">
+                  <img src="assets/images/suite2/suite2_bedroom_deluxe_king.jpg" alt="Bedroom 2 thumbnail">
+                  <span class="thumb-caption">Bedroom 2</span>
+                </button>
+                <button type="button" class="suite-thumb-btn" onclick="window.openGalleryLightbox(4)"
+                  title="View Dining Area in Lightbox">
+                  <img src="assets/images/suite2/suite2_dining_main.jpg" alt="Dining Area thumbnail">
+                  <span class="thumb-caption">Dining</span>
+                </button>
+                <button type="button" class="suite-thumb-btn" onclick="window.openGalleryLightbox(10)"
+                  title="View Shower in Lightbox">
+                  <img src="assets/images/suite2/suite2_bathroom_shower.jpg" alt="Shower thumbnail">
+                  <span class="thumb-caption">Shower</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="suite-card-actions">
+              <button class="btn-suite-filter" onclick="window.openGalleryLightbox(0)">
+                <i class="fa-solid fa-images"></i> View Photos
+              </button>
+              <button class="btn-suite-reserve" data-book-room="room2">
+                <i class="fa-brands fa-whatsapp"></i> Book Room 2
+              </button>
+            </div>
+          </div>
+        </article>
+
       </div>
 
-      <!-- Spaces Grid: ONLY the 5 actual spaces of the house (No flyer card here) -->
-      <div class="spaces-grid">
-        <!-- 1. Bedroom -->
-        <div class="space-card" data-category="bedrooms">
-          <div class="space-img-wrap">
-            <img src="assets/images/bedroom_master.jpg" alt="Bedroom at Prime Suite" class="space-img">
-            <span class="space-badge">BEDROOM</span>
-          </div>
-          <div class="space-content">
-            <h3 class="space-title">Bedroom</h3>
-            <p class="space-desc">
-              Cozy, clean, and comfortable bedroom equipped with air conditioning, premium bedding, and ambient lighting
-              for a peaceful stay.
+      <!-- Full Property Residence Banner (Both Rooms) -->
+      <div class="villa-full-banner">
+        <div class="villa-full-inner">
+          <div class="villa-full-content">
+            <span class="villa-full-tag">
+              <i class="fa-solid fa-house-chimney"></i> Both Rooms
+            </span>
+            <h3>Need More Space? Reserve Both Rooms Together</h3>
+            <p>
+              Enjoy the entire 4-bedroom property with 2 separate living rooms, 2 dining areas, secure perimeter fencing,
+              and ample paved on-site parking in Anaji behind Nhyira hotel. Perfect for families, groups, and business trips.
             </p>
-            <div class="space-features">
-              <span class="space-feat-item"><i class="fa-solid fa-bed"></i> Cozy Bedroom</span>
-              <span class="space-feat-item"><i class="fa-solid fa-snowflake"></i> Air Conditioned</span>
-              <span class="space-feat-item"><i class="fa-solid fa-wifi"></i> Free Wi-Fi</span>
-              <span class="space-feat-item"><i class="fa-solid fa-shield-halved"></i> Secure & Private</span>
+            <div class="villa-full-perks">
+              <span><i class="fa-solid fa-check"></i> 4 Private Bedrooms</span>
+              <span><i class="fa-solid fa-check"></i> 2 Full Living Rooms</span>
+              <span><i class="fa-solid fa-check"></i> 2 Dining Areas</span>
+              <span><i class="fa-solid fa-check"></i> Ample Paved Parking</span>
+              <span><i class="fa-solid fa-car-side"></i> Car Rental Available</span>
+              <span><i class="fa-solid fa-check"></i> 24/7 Host Support</span>
             </div>
           </div>
-        </div>
-
-        <!-- 2. Living Room (Hall) -->
-        <div class="space-card" data-category="living">
-          <div class="space-img-wrap">
-            <img src="assets/images/living_room.jpg" alt="Living Room at Prime Suite" class="space-img">
-            <span class="space-badge">LIVING ROOM</span>
-          </div>
-          <div class="space-content">
-            <h3 class="space-title">Living Room (Hall)</h3>
-            <p class="space-desc">
-              Spacious living area featuring modern lighting, comfortable seating, and an elegant setting designed for
-              pure relaxation.
-            </p>
-            <div class="space-features">
-              <span class="space-feat-item"><i class="fa-solid fa-couch"></i> Spacious Living Area</span>
-              <span class="space-feat-item"><i class="fa-solid fa-snowflake"></i> Air Conditioned</span>
-              <span class="space-feat-item"><i class="fa-solid fa-wifi"></i> Free Wi-Fi</span>
-              <span class="space-feat-item"><i class="fa-solid fa-broom"></i> Clean & Comfortable</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3. Another Bedroom -->
-        <div class="space-card" data-category="bedrooms">
-          <div class="space-img-wrap">
-            <img src="assets/images/bedroom_second.jpg" alt="Another Bedroom at Prime Suite" class="space-img">
-            <span class="space-badge">ANOTHER BEDROOM</span>
-          </div>
-          <div class="space-content">
-            <h3 class="space-title">Another Bedroom</h3>
-            <p class="space-desc">
-              Additional cozy bedroom providing serene comfort, privacy, air conditioning, and fresh clean bedding.
-            </p>
-            <div class="space-features">
-              <span class="space-feat-item"><i class="fa-solid fa-bed"></i> Cozy Bedroom</span>
-              <span class="space-feat-item"><i class="fa-solid fa-snowflake"></i> Air Conditioned</span>
-              <span class="space-feat-item"><i class="fa-solid fa-wifi"></i> Free Wi-Fi</span>
-              <span class="space-feat-item"><i class="fa-solid fa-shield-halved"></i> Secure & Private</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4. Dining Area -->
-        <div class="space-card" data-category="living">
-          <div class="space-img-wrap">
-            <img src="assets/images/dining_area.jpg" alt="Dining Area at Prime Suite" class="space-img">
-            <span class="space-badge">DINING AREA</span>
-          </div>
-          <div class="space-content">
-            <h3 class="space-title">Dining Area</h3>
-            <p class="space-desc">
-              Comfortable and tidy dining setting suitable for family meals, quiet dining, or work.
-            </p>
-            <div class="space-features">
-              <span class="space-feat-item"><i class="fa-solid fa-utensils"></i> Dining Table & Chairs</span>
-              <span class="space-feat-item"><i class="fa-solid fa-broom"></i> Clean & Comfortable</span>
-              <span class="space-feat-item"><i class="fa-solid fa-wifi"></i> Free Wi-Fi</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5. Villa Exterior -->
-        <div class="space-card" data-category="exterior">
-          <div class="space-img-wrap">
-            <img src="assets/images/exterior_villa.jpg" alt="Exterior Villa Grounds at Prime Suite" class="space-img">
-            <span class="space-badge">EXTERIOR</span>
-          </div>
-          <div class="space-content">
-            <h3 class="space-title">Prime Suite Exterior</h3>
-            <p class="space-desc">
-              Serene environment with lush greenery, balconies, secure fencing, and ample parking.
-            </p>
-            <div class="space-features">
-              <span class="space-feat-item"><i class="fa-solid fa-square-parking"></i> Ample Parking</span>
-              <span class="space-feat-item"><i class="fa-solid fa-shield-halved"></i> Secure & Private</span>
-              <span class="space-feat-item"><i class="fa-solid fa-headset"></i> 24/7 Support</span>
-            </div>
+          <div class="villa-full-action">
+            <button class="btn-villa-book" data-book-room="both">
+              <i class="fa-brands fa-whatsapp"></i> Reserve Both Rooms
+            </button>
+            <a href="tel:+233547238675" class="btn-villa-call">
+              <i class="fa-solid fa-phone"></i> Call 0547238675
+            </a>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- ==========================================================================
-       AMENITIES GRID (THE 8 EXACT FLYER AMENITIES)
+       AMENITIES GRID (THE FLYER AMENITIES)
        ========================================================================== -->
   <section class="section amenities-section" id="amenities">
     <div class="container">
@@ -321,11 +569,18 @@
         <h2 class="section-title">Amenities Included</h2>
         <span class="cursive-accent" style="color: var(--color-gold);">Your Comfort Our Priority</span>
         <p class="section-description">
-          Enjoy a cozy and elegant stay in a serene environment with all the amenities you need.
+          Enjoy a cozy and elegant stay in a serene environment with all the amenities and comforts you need.
         </p>
       </div>
 
       <div class="amenities-grid">
+
+        <div class="amenity-card">
+          <div class="amenity-icon-box"><i class="fa-solid fa-car-side"></i></div>
+          <h3 class="amenity-name">Car Rental Available</h3>
+          <p class="amenity-detail">Convenient private car rental service available on-demand for easy trips around Takoradi, Anaji, and beyond.</p>
+        </div>
+
         <div class="amenity-card">
           <div class="amenity-icon-box"><i class="fa-solid fa-bed"></i></div>
           <h3 class="amenity-name">Cozy Bedrooms</h3>
@@ -346,13 +601,13 @@
 
         <div class="amenity-card">
           <div class="amenity-icon-box"><i class="fa-solid fa-shield-halved"></i></div>
-          <h3 class="amenity-name">Secure & Private</h3>
+          <h3 class="amenity-name">Secure &amp; Private</h3>
           <p class="amenity-detail">A safe, gated, and private environment ensuring complete peace of mind.</p>
         </div>
 
         <div class="amenity-card">
           <div class="amenity-icon-box"><i class="fa-solid fa-broom"></i></div>
-          <h3 class="amenity-name">Clean & Comfortable</h3>
+          <h3 class="amenity-name">Clean &amp; Comfortable</h3>
           <p class="amenity-detail">Pristine cleanliness and utmost comfort maintained across every room.</p>
         </div>
 
@@ -378,103 +633,7 @@
   </section>
 
   <!-- ==========================================================================
-       "PERFECT FOR" SECTION (FROM FLYER)
-       ========================================================================== -->
-  <section class="section perfect-section" id="perfect-for">
-    <div class="container">
-      <div class="perfect-grid">
-        <!-- Left: Dark Card with Flyer Script & Checkmarks -->
-        <div class="perfect-card-dark">
-          <div class="perfect-script">Perfect for:</div>
-
-          <div class="perfect-list">
-            <div class="perfect-item">
-              <div class="perfect-check-icon"><i class="fa-solid fa-check"></i></div>
-              <div class="perfect-item-content">
-                <h4>Vacation Stays</h4>
-                <p>Ideal for relaxing vacations in a serene environment with all the comfort you need.</p>
-              </div>
-            </div>
-
-            <div class="perfect-item">
-              <div class="perfect-check-icon"><i class="fa-solid fa-check"></i></div>
-              <div class="perfect-item-content">
-                <h4>Business Trips</h4>
-                <p>Quiet, comfortable spaces with Free Wi-Fi and 24/7 support for working professionals.</p>
-              </div>
-            </div>
-
-            <div class="perfect-item">
-              <div class="perfect-check-icon"><i class="fa-solid fa-check"></i></div>
-              <div class="perfect-item-content">
-                <h4>Weekend Getaways</h4>
-                <p>Enjoy a cozy, private escape to unwind and recharge.</p>
-              </div>
-            </div>
-
-            <div class="perfect-item">
-              <div class="perfect-check-icon"><i class="fa-solid fa-check"></i></div>
-              <div class="perfect-item-content">
-                <h4>Long Term Stays</h4>
-                <p>Feel at home, anywhere with all essential amenities for extended stays.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Flyer's Golden Circular Book Now Element -->
-          <div class="perfect-book-cta">
-            <a href="#booking" class="gold-circle-cta" aria-label="Book Now and experience comfort like never before">
-              <span class="txt-book">BOOK</span>
-              <span class="txt-now">NOW</span>
-              <span class="txt-exp">and experience comfort like never before!</span>
-            </a>
-            <div class="perfect-cta-text">
-              <h5>BOOK NOW</h5>
-              <p>and experience comfort like never before!</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: Feature Highlights Box -->
-        <div class="perfect-feature-box">
-          <div class="perfect-box-item">
-            <div class="perfect-box-icon"><i class="fa-solid fa-shield-halved"></i></div>
-            <div class="perfect-box-text">
-              <h4>Secure & Private</h4>
-              <p>Gated residential property with high privacy and peace of mind.</p>
-            </div>
-          </div>
-
-          <div class="perfect-box-item">
-            <div class="perfect-box-icon"><i class="fa-solid fa-wifi"></i></div>
-            <div class="perfect-box-text">
-              <h4>Free High-Speed Wi-Fi</h4>
-              <p>Seamless connectivity for remote work, business, and entertainment.</p>
-            </div>
-          </div>
-
-          <div class="perfect-box-item">
-            <div class="perfect-box-icon"><i class="fa-solid fa-snowflake"></i></div>
-            <div class="perfect-box-text">
-              <h4>Air Conditioned Rooms</h4>
-              <p>Individual remote climate cooling across bedrooms and living spaces.</p>
-            </div>
-          </div>
-
-          <div class="perfect-box-item">
-            <div class="perfect-box-icon"><i class="fa-solid fa-square-parking"></i></div>
-            <div class="perfect-box-text">
-              <h4>Ample Private Parking</h4>
-              <p>Spacious paved on-premises parking for your vehicles.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       RESERVATION SECTION (ONE COMPLETE HOUSE - NO SELECT SPACE)
+       RESERVATION SECTION
        ========================================================================== -->
   <section class="section booking-section" id="booking">
     <div class="container">
@@ -485,7 +644,7 @@
         <h2 class="section-title">Book Now</h2>
         <span class="cursive-accent">and experience comfort like never before!</span>
         <p class="section-description">
-          Reserve Prime Suite directly with the host on WhatsApp, or call our official contact numbers anytime.
+          Reserve your preferred room directly with the host on WhatsApp, or call our official contact numbers anytime.
         </p>
       </div>
 
@@ -493,15 +652,48 @@
         <div class="booking-header-bar">
           <div class="booking-header-title">
             <h3>PRIME SUITE AIR BnB RENTALS</h3>
-            <p>LOCATION: Anaji behind Nhyira hotel â€¢ CONTACTS: 0557060765 / 0547238675</p>
+            <p>LOCATION: <span class="property-location-text">Anaji behind Nhyira hotel</span> • CONTACTS: 0547238675 / 0550638015</p>
           </div>
         </div>
 
         <div class="booking-grid">
-          <!-- Left: Input Form (Dates & Guest Info - No "Select Space") -->
+          <!-- Left: Input Form -->
           <div class="booking-form-wrap">
             <div class="step-title">
-              <span class="number">1</span> Reservation Dates
+              <span class="number">1</span> Select Room
+            </div>
+            <div class="form-row" style="grid-template-columns: 1fr;">
+              <div class="form-group">
+                <label class="form-label" for="bookingRoom">Choose Room</label>
+                <select id="bookingRoom" class="form-select">
+                  <option value="room1" selected>Room 1</option>
+                  <option value="room2">Room 2</option>
+                  <option value="both">Both Rooms (Room 1 &amp; Room 2)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="step-title">
+              <span class="number">2</span> Car Rental Service
+            </div>
+            <div class="form-row" style="grid-template-columns: 1fr;">
+              <div class="form-group">
+                <label class="form-label" for="bookingCarRental">
+                  <i class="fa-solid fa-car-side" style="color: var(--color-gold);"></i> Add Car Rental Service to your Stay?
+                </label>
+                <select id="bookingCarRental" class="form-select">
+                  <option value="none">No, Room Only</option>
+                  <option value="daily" selected>Yes – Add Car Rental Service</option>
+                  <option value="inquiry">Yes – Inquire About Rates &amp; Vehicle Options</option>
+                </select>
+                <small style="color: #64748B; font-size: 0.8rem; margin-top: 0.35rem; display: block;">
+                  <i class="fa-solid fa-circle-check" style="color: #10B981;"></i> Air-conditioned private vehicles available for daily city trips upon request.
+                </small>
+              </div>
+            </div>
+
+            <div class="step-title">
+              <span class="number">3</span> Reservation Dates
             </div>
             <div class="form-row">
               <div class="form-group">
@@ -515,7 +707,7 @@
             </div>
 
             <div class="step-title">
-              <span class="number">2</span> Guest Information
+              <span class="number">4</span> Guest Information
             </div>
             <div class="form-row">
               <div class="form-group">
@@ -524,7 +716,7 @@
               </div>
               <div class="form-group">
                 <label class="form-label" for="guestPhone">Your Phone / WhatsApp Number</label>
-                <input type="tel" id="guestPhone" class="form-input" placeholder="e.g. 0557060765" required>
+                <input type="tel" id="guestPhone" class="form-input" placeholder="e.g. 0547238675" required>
               </div>
             </div>
             <div class="form-row">
@@ -534,7 +726,8 @@
                   <option value="1">1 Person</option>
                   <option value="2" selected>2 Persons</option>
                   <option value="3">3 Persons</option>
-                  <option value="4+">4+ Persons</option>
+                  <option value="4">4 Persons</option>
+                  <option value="5+">5+ Persons</option>
                 </select>
               </div>
               <div class="form-group">
@@ -553,12 +746,18 @@
 
             <div class="summary-card">
               <div class="summary-row">
-                <span>Rental:</span>
-                <strong>Prime Suite</strong>
+                <span>Selected:</span>
+                <strong id="summaryRoom">Room 1</strong>
+              </div>
+              <div class="summary-row">
+                <span>Car Rental:</span>
+                <strong id="summaryCarRental" style="color: #10B981; font-weight: 700;">Yes – Added to Stay</strong>
               </div>
               <div class="summary-row">
                 <span>Included:</span>
-                <strong>Bedrooms, Hall, Dining & Grounds</strong>
+                <strong id="summaryFeatures" style="font-size: 0.8rem; text-align: right; max-width: 60%;">
+                  2 Bedrooms, Living Room, Dining Area, Air Conditioning
+                </strong>
               </div>
               <div class="summary-row">
                 <span>Duration:</span>
@@ -566,7 +765,7 @@
               </div>
               <div class="summary-row">
                 <span>Location:</span>
-                <strong>Anaji behind Nhyira hotel</strong>
+                <strong id="summaryLocation" class="property-location-text">Anaji behind Nhyira hotel</strong>
               </div>
               <div class="summary-row">
                 <span>Support:</span>
@@ -574,31 +773,25 @@
               </div>
             </div>
 
-            <!-- Instant WhatsApp Booking Button to 0557060765 -->
+            <!-- Unified Direct WhatsApp Booking Button -->
             <button class="btn-whatsapp-reserve" id="btnWhatsappBook">
-              <i class="fa-brands fa-whatsapp" style="font-size: 1.3rem;"></i>
-              <span>Book via WhatsApp (0557060765)</span>
-            </button>
-
-            <!-- Secondary WhatsApp Booking Button to 0547238675 -->
-            <button class="btn-whatsapp-reserve" id="btnWhatsappBook2" style="background: #128C7E;">
-              <i class="fa-brands fa-whatsapp" style="font-size: 1.3rem;"></i>
-              <span>Book via WhatsApp (0547238675)</span>
+              <i class="fa-brands fa-whatsapp" style="font-size: 1.35rem;"></i>
+              <span>Send Reservation to WhatsApp</span>
             </button>
 
             <!-- Direct Call Hotline Buttons -->
             <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
-              <a href="tel:+233557060765" class="btn-call-direct" style="flex: 1;">
-                <i class="fa-solid fa-phone"></i> Call 0557060765
-              </a>
               <a href="tel:+233547238675" class="btn-call-direct" style="flex: 1;">
                 <i class="fa-solid fa-phone"></i> Call 0547238675
+              </a>
+              <a href="tel:+233550638015" class="btn-call-direct" style="flex: 1;">
+                <i class="fa-solid fa-phone"></i> Call 0550638015
               </a>
             </div>
 
             <div class="booking-guarantee">
               <i class="fa-solid fa-shield-halved" style="color: var(--color-gold);"></i>
-              <span>Direct Host Contact â€¢ 24/7 Support â€¢ Fast Response</span>
+              <span>Direct Host Contact • 24/7 Support • Fast Response</span>
             </div>
           </div>
         </div>
@@ -607,7 +800,7 @@
   </section>
 
   <!-- ==========================================================================
-       LOCATION & CONTACT SECTION (ANAJI BEHIND NHYIRA HOTEL)
+       LOCATION & CONTACT SECTION
        ========================================================================== -->
   <section class="section location-section" id="location">
     <div class="container">
@@ -615,9 +808,10 @@
         <div class="section-subtitle-badge">
           <i class="fa-solid fa-location-dot"></i> Property Location
         </div>
-        <h2 class="section-title">Location & Contacts</h2>
+        <h2 class="section-title">Location &amp; Contacts</h2>
         <span class="cursive-accent">Feel at home, anywhere.</span>
       </div>
+
 
       <div class="location-grid">
         <div class="location-info-card">
@@ -625,7 +819,7 @@
             <div class="location-icon-circle"><i class="fa-solid fa-location-dot"></i></div>
             <div>
               <h4>LOCATION:</h4>
-              <p style="font-size: 1.15rem; font-weight: 700; color: var(--color-navy-deep);">
+              <p id="mainLocationText" class="property-location-text" style="font-size: 1.15rem; font-weight: 700; color: var(--color-navy-deep);">
                 Anaji behind Nhyira hotel
               </p>
             </div>
@@ -637,25 +831,20 @@
             <div>
               <h4>CONTACTS:</h4>
               <p style="font-size: 1.15rem; font-weight: 700; color: var(--color-navy-deep);">
-                <a href="tel:+233557060765" style="color: inherit;">0557060765</a> /
-                <a href="tel:+233547238675" style="color: inherit;">0547238675</a>
+                <a href="tel:+233547238675" style="color: inherit;">0547238675</a> /
+                <a href="tel:+233550638015" style="color: inherit;">0550638015</a>
               </p>
             </div>
           </div>
 
           <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
-            <a href="https://wa.me/233557060765" target="_blank" rel="noopener noreferrer" class="btn-open-maps"
-              style="background: var(--color-whatsapp); color: #FFFFFF;">
-              <i class="fa-brands fa-whatsapp"></i> Chat 0557060765
-            </a>
-
             <a href="https://wa.me/233547238675" target="_blank" rel="noopener noreferrer" class="btn-open-maps"
-              style="background: #128C7E; color: #FFFFFF;">
-              <i class="fa-brands fa-whatsapp"></i> Chat 0547238675
+              style="background: var(--color-whatsapp); color: #FFFFFF;">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
             </a>
 
-            <a href="tel:+233557060765" class="btn-open-maps">
-              <i class="fa-solid fa-phone"></i> Call Directly
+            <a href="tel:+233547238675" class="btn-open-maps">
+              <i class="fa-solid fa-phone"></i> Call Host (0547238675)
             </a>
           </div>
         </div>
@@ -667,9 +856,9 @@
               <div class="map-pin-inner"><i class="fa-solid fa-house"></i></div>
             </div>
             <h3>PRIME SUITE AIR BnB</h3>
-            <p style="font-weight: 700; color: #FFFFFF; font-size: 1.1rem;">Anaji behind Nhyira hotel</p>
-            <p>CONTACTS: 0557060765 / 0547238675</p>
-            <a href="https://maps.google.com/?q=Anaji+behind+Nhyira+hotel" target="_blank" rel="noopener noreferrer"
+            <p id="mapLocationText" class="property-location-text" style="font-weight: 700; color: #FFFFFF; font-size: 1.1rem;">Anaji behind Nhyira hotel</p>
+            <p>CONTACTS: 0547238675 / 0550638015</p>
+            <a id="btnGoogleMaps" href="https://maps.google.com/?q=Anaji+behind+Nhyira+hotel" target="_blank" rel="noopener noreferrer"
               class="btn-open-maps" style="margin-top: 1rem;">
               <i class="fa-solid fa-map-location-dot"></i> View on Google Maps
             </a>
@@ -680,7 +869,7 @@
   </section>
 
   <!-- ==========================================================================
-       OFFICIAL PROMOTIONAL FLYER (JUST ONE FLYER ON THE ENTIRE WEBSITE)
+       OFFICIAL PROMOTIONAL FLYER
        ========================================================================== -->
   <section class="flyer-section" id="flyer-section">
     <div class="container">
@@ -690,7 +879,7 @@
             <i class="fa-solid fa-certificate"></i> Official Flyer
           </div>
           <h3>Prime Suite Air BnB Rentals</h3>
-          <p>The exact pictures and information from our official promotional flyer.</p>
+          <p>The exact pictures and verified information from our official promotional flyer.</p>
           <div class="flyer-action-row">
             <button class="btn-view-flyer" onclick="window.openFlyerModal()">
               <i class="fa-solid fa-eye"></i> View Full Flyer
@@ -703,9 +892,9 @@
 
         <div style="text-align: center;">
           <img src="assets/images/prime_suite_flyer.png" alt="Official Prime Suite Flyer" class="flyer-img-preview"
-            onclick="window.openFlyerModal()" title="Click to view full resolution flyer">
+            onclick="window.openFlyerModal()" title="Click to view flyer">
           <small style="color: #94A3B8; display: block; margin-top: 0.75rem; font-size: 0.75rem;">
-            Click to enlarge flyer
+            Click to view flyer
           </small>
         </div>
       </div>
@@ -750,45 +939,36 @@
           <h4>Navigation</h4>
           <div class="footer-links">
             <a href="#home">Home</a>
-            <a href="#spaces">The House</a>
+            <a href="#rooms">The Rooms</a>
             <a href="#amenities">Amenities</a>
-            <a href="#perfect-for">Perfect For</a>
             <a href="#booking">Book Now</a>
-            <a href="#location">Location & Contacts</a>
-            <a href="javascript:void(0)" onclick="window.openFlyerModal()">Official Flyer</a>
+            <a href="#location">Location &amp; Contacts</a>
           </div>
         </div>
 
         <div class="footer-col">
-          <h4>Contacts & Location</h4>
+          <h4>Contacts &amp; Location</h4>
           <div class="footer-contact-items">
             <div class="footer-contact-row">
               <i class="fa-solid fa-location-dot"></i>
-              <span><strong>LOCATION:</strong> Anaji behind Nhyira hotel</span>
+              <span><strong>LOCATION:</strong> <span class="property-location-text">Anaji behind Nhyira hotel</span></span>
             </div>
             <div class="footer-contact-row">
               <i class="fa-solid fa-phone"></i>
               <div>
                 <strong>CONTACTS:</strong><br>
-                <a href="tel:+233557060765">0557060765</a><br>
-                <a href="tel:+233547238675">0547238675</a>
+                <a href="tel:+233547238675">0547238675</a> / <a href="tel:+233550638015">0550638015</a>
               </div>
             </div>
             <div class="footer-contact-row">
               <i class="fa-brands fa-whatsapp"></i>
-              <a href="https://wa.me/233557060765" target="_blank" rel="noopener noreferrer">
-                WhatsApp: 0557060765
-              </a>
-            </div>
-            <div class="footer-contact-row">
-              <i class="fa-brands fa-whatsapp"></i>
               <a href="https://wa.me/233547238675" target="_blank" rel="noopener noreferrer">
-                WhatsApp: 0547238675
+                WhatsApp: 0547238675 / 0550638015
               </a>
             </div>
             <div class="footer-contact-row">
               <i class="fa-solid fa-headset"></i>
-              <span>24/7 Support</span>
+              <span>24/7 Host Support</span>
             </div>
           </div>
         </div>
@@ -796,34 +976,38 @@
 
       <div class="footer-bottom">
         <div>
-          Â© 2026 <strong>Prime Suite â€“ Air BnB Rentals</strong>. Location: Anaji behind Nhyira hotel.
+          © 2026 <strong>Prime Suite – Air BnB Rentals</strong>. Location: <span class="property-location-text">Anaji behind Nhyira hotel</span>.
         </div>
         <div>
-          <span>Contacts: 0557060765 / 0547238675</span>
+          <span>Contacts: 0547238675 / 0550638015</span>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- ==========================================================================
-       OFFICIAL FLYER MODAL
+       OFFICIAL FLYER PREVIEW MODAL (ONLY FOR FLYER)
        ========================================================================== -->
-  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Official Flyer Preview">
+  <div class="lightbox-modal" id="flyerModal" role="dialog" aria-modal="true" aria-label="Official Flyer Preview">
     <div class="lightbox-dialog">
-      <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close Flyer Preview">&times;</button>
-
+      <button class="lightbox-close-btn" id="flyerClose" aria-label="Close Flyer Preview">&times;</button>
       <div class="lightbox-img-wrap">
-        <img src="assets/images/prime_suite_flyer.png" alt="Official Prime Suite Flyer" id="lightboxImg"
-          class="lightbox-img">
+        <img src="assets/images/prime_suite_flyer.png" alt="Official Prime Suite Flyer" class="lightbox-img">
       </div>
-
       <div class="lightbox-caption-bar">
-        <h3 id="lightboxTitle" class="lightbox-title">Official Prime Suite Flyer</h3>
-        <p id="lightboxDesc" class="lightbox-desc">Location: Anaji behind Nhyira hotel â€¢ Contacts: 0557060765 /
-          0547238675</p>
+        <h3 class="lightbox-title">Official Prime Suite Flyer</h3>
+        <p class="lightbox-desc">Location: <span class="property-location-text">Anaji behind Nhyira hotel</span> • Contacts: 0547238675 / 0550638015</p>
       </div>
     </div>
   </div>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP BUTTON (FOR QUICK MOBILE BOOKING)
+       ========================================================================== -->
+  <a href="https://wa.me/233547238675" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn"
+    aria-label="Direct WhatsApp Chat with Prime Suite Host" title="Chat with Host on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
   <!-- Scripts -->
   <script src="js/booking.js"></script>
