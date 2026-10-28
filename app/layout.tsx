@@ -40,6 +40,9 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   formatDetection: { telephone: true },
+  verification: {
+    google: 'Kzlb2LWBoX0d1_SNtRrM0HczOhbV61ovKyf0yaI47WA',
+  },
 };
 
 export const viewport: Viewport = {
