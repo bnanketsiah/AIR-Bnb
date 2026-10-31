@@ -38,7 +38,7 @@ const S2 = '/assets/images/suite2';
 const IMG = '/assets/images';
 
 export const GALLERY_ITEMS: GalleryItem[] = [
-  { src: `${S2}/suite2_living_room_main.jpg`, title: 'Room 2 – Living Room', desc: 'Room 2 • Italian black marble floors, chandelier, and comfortable sectional sofa.', tag: 'Room 2', room: 'room2' },
+  { src: `${S2}/suite2_living_room_main_v2.jpg`, title: 'Room 2 – Living Room', desc: 'Room 2 • Italian black marble floors, chandelier, and comfortable sectional sofa.', tag: 'Room 2', room: 'room2' },
   { src: `${S2}/suite2_bedroom_master_king.jpg`, title: 'Room 2 – Master Bedroom', desc: 'Room 2 • King-sized bed, acoustic wood paneling, in-room TV, and ambient lighting.', tag: 'Room 2', room: 'room2' },
   { src: `${S2}/suite2_bedroom_deluxe_king.jpg`, title: 'Room 2 – Bedroom 2', desc: 'Room 2 • Second bedroom with king bed, in-room TV, and wardrobe storage.', tag: 'Room 2', room: 'room2' },
   { src: `${S2}/suite2_living_tv_wall.jpg`, title: 'Room 2 – TV & Soundbar', desc: 'Room 2 • Entertainment center with soundbar audio and acoustic wood slats.', tag: 'Room 2', room: 'room2' },
@@ -56,7 +56,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   { src: `${IMG}/bedroom_second.jpg`, title: 'Room 1 – Bedroom 2', desc: 'Room 1 • Second bedroom with queen bed and air conditioning.', tag: 'Room 1', room: 'room1' },
   { src: `${IMG}/dining_area.jpg`, title: 'Room 1 – Dining Area', desc: 'Room 1 • Dining table and four chairs for meals or work.', tag: 'Room 1', room: 'room1' },
   { src: `${IMG}/living_room.jpg`, title: 'Room 1 – Living Room', desc: 'Room 1 • Private living room with comfortable couch seating and TV.', tag: 'Room 1', room: 'room1' },
-  { src: `${IMG}/exterior_villa.jpg`, title: 'Property Grounds & Parking', desc: 'Prime Suite • Gated property with boundary lighting and ample paved parking in Anaji.', tag: 'Grounds', room: 'shared' },
+  { src: `${IMG}/exterior_villa_v2.jpg`, title: 'Property Grounds & Parking', desc: 'Prime Suite • Gated property with boundary lighting and ample paved parking in Anaji.', tag: 'Grounds', room: 'shared' },
   { src: `${IMG}/prime_suite_flyer.png`, title: 'Official Prime Suite Flyer', desc: 'Official promotional flyer with amenities, contacts 0547238675 / 0550638015, and location in Anaji.', tag: 'Flyer', room: 'shared' },
 ];
 

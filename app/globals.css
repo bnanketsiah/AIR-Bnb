@@ -2336,11 +2336,11 @@ ul {
 
 /* Precise focal cropping for Suite covers */
 .suite-cover-room1 {
-  object-position: center 15% !important; /* Positions at 15% from top so the queen bed, headboard & nautical art are completely visible! */
+  object-position: center 38% !important;
 }
 
 .suite-cover-room2 {
-  object-position: center 32%; /* Positions to show the Italian marble and chandelier */
+  object-position: center 25% !important;
 }
 
 .suite-feature-card:hover .suite-card-cover img {

@@ -131,8 +131,8 @@ const ROOM_CARDS: RoomCard[] = [
   {
     key: 'room1',
     featured: false,
-    cover: '/assets/images/bedroom_master.jpg',
-    coverAlt: 'Room 1 Master Bedroom',
+    cover: '/assets/images/bedroom_second.jpg',
+    coverAlt: 'Room 1 Bedroom with Golden Pegasus Art',
     desc: 'Cozy, restful, and peaceful private suite with two air-conditioned bedrooms, dedicated living room with comfortable seating and TV, and a 4-seater dining space.',
     specs: [
       { icon: 'fa-bed', label: '2 Bedrooms (Queen Beds)' },
@@ -147,13 +147,13 @@ const ROOM_CARDS: RoomCard[] = [
       { file: 'bedroom_second.jpg', caption: 'Bedroom 2', title: 'Bedroom 2', src: '/assets/images/bedroom_second.jpg' },
       { file: 'living_room.jpg', caption: 'Living Room', title: 'Living Room', src: '/assets/images/living_room.jpg' },
       { file: 'dining_area.jpg', caption: 'Dining', title: 'Dining Area', src: '/assets/images/dining_area.jpg' },
-      { file: 'exterior_villa.jpg', caption: 'Grounds', title: 'Property Grounds', src: '/assets/images/exterior_villa.jpg' },
+      { file: 'exterior_villa_v2.jpg', caption: 'Grounds', title: 'Property Grounds', src: '/assets/images/exterior_villa_v2.jpg' },
     ],
   },
   {
     key: 'room2',
     featured: true,
-    cover: '/assets/images/suite2/suite2_living_room_main.jpg',
+    cover: '/assets/images/suite2/suite2_living_room_main_v2.jpg',
     coverAlt: 'Room 2 Living Room',
     desc: 'Spacious, fully air-conditioned suite with Italian black marble floors, chandelier dining, private living room with TV wall and soundbar, walk-in rainfall shower, and two king bedrooms.',
     specs: [
@@ -165,7 +165,7 @@ const ROOM_CARDS: RoomCard[] = [
       { icon: 'fa-shield-halved', label: 'Private & Air Conditioned' },
     ],
     thumbs: [
-      { file: 'suite2_living_room_main.jpg', caption: 'Living Room', title: 'Living Room', src: '/assets/images/suite2/suite2_living_room_main.jpg' },
+      { file: 'suite2_living_room_main_v2.jpg', caption: 'Living Room', title: 'Living Room', src: '/assets/images/suite2/suite2_living_room_main_v2.jpg' },
       { file: 'suite2_bedroom_master_king.jpg', caption: 'Master Bed', title: 'Master Bedroom', src: '/assets/images/suite2/suite2_bedroom_master_king.jpg' },
       { file: 'suite2_bedroom_deluxe_king.jpg', caption: 'Bedroom 2', title: 'Bedroom 2', src: '/assets/images/suite2/suite2_bedroom_deluxe_king.jpg' },
       { file: 'suite2_dining_main.jpg', caption: 'Dining', title: 'Dining Area', src: '/assets/images/suite2/suite2_dining_main.jpg' },
@@ -468,7 +468,7 @@ export function Location() {
           </div>
 
           <div className="map-visual-card">
-            <img src="/assets/images/exterior_villa.jpg" alt={`Prime Suite ${LOCATION}`} className="map-bg-image" />
+            <img src="/assets/images/exterior_villa_v2.jpg" alt={`Prime Suite ${LOCATION}`} className="map-bg-image" />
             <div className="map-overlay-content">
               <div className="map-pin-pulse">
                 <div className="map-pin-inner">

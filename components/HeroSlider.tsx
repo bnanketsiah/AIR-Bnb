@@ -18,10 +18,10 @@ type Slide = {
 };
 
 const SLIDES: Slide[] = [
-  { src: '/assets/images/suite2/suite2_living_room_main.jpg', alt: 'Prime Suite Living Room', tag: 'Living Room', tagClass: 'tag-room2', icon: 'fa-couch', title: 'Living Room', room: 'room2', infoHref: '#rooms', infoIcon: 'fa-circle-info', infoLabel: 'View Rooms' },
+  { src: '/assets/images/suite2/suite2_living_room_main_v2.jpg', alt: 'Prime Suite Living Room', tag: 'Living Room', tagClass: 'tag-room2', icon: 'fa-couch', title: 'Living Room', room: 'room2', infoHref: '#rooms', infoIcon: 'fa-circle-info', infoLabel: 'View Rooms' },
   { src: '/assets/images/suite2/suite2_bedroom_master_king.jpg', alt: 'Prime Suite Master Bedroom', tag: 'Master Bedroom', tagClass: 'tag-room2', icon: 'fa-bed', title: 'Master Bedroom', room: 'room2', infoHref: '#rooms', infoIcon: 'fa-circle-info', infoLabel: 'View Rooms' },
   { src: '/assets/images/suite2/suite2_dining_main.jpg', alt: 'Prime Suite Dining Area', tag: 'Dining Area', tagClass: 'tag-room2', icon: 'fa-utensils', title: 'Dining Area', room: 'room2', infoHref: '#rooms', infoIcon: 'fa-circle-info', infoLabel: 'View Rooms' },
-  { src: '/assets/images/exterior_villa.jpg', alt: 'Prime Suite Villa Exterior and Paved Parking', tag: 'Property Grounds', tagClass: 'tag-villa', icon: 'fa-shield-halved', title: 'Exterior & Paved Parking', room: 'both', infoHref: '#location', infoIcon: 'fa-location-dot', infoLabel: 'Location' },
+  { src: '/assets/images/exterior_villa_v2.jpg', alt: 'Prime Suite Villa Exterior and Paved Parking', tag: 'Property Grounds', tagClass: 'tag-villa', icon: 'fa-shield-halved', title: 'Exterior & Paved Parking', room: 'both', infoHref: '#location', infoIcon: 'fa-location-dot', infoLabel: 'Location' },
 ];
 
 const AUTOPLAY_MS = 4500;
