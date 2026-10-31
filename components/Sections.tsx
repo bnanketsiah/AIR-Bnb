@@ -131,8 +131,8 @@ const ROOM_CARDS: RoomCard[] = [
   {
     key: 'room1',
     featured: false,
-    cover: '/assets/images/bedroom_second.jpg',
-    coverAlt: 'Room 1 Bedroom with Golden Pegasus Art',
+    cover: '/assets/images/room1_bed_showcase.jpg',
+    coverAlt: 'Room 1 Master Bedroom with Queen Bed',
     desc: 'Cozy, restful, and peaceful private suite with two air-conditioned bedrooms, dedicated living room with comfortable seating and TV, and a 4-seater dining space.',
     specs: [
       { icon: 'fa-bed', label: '2 Bedrooms (Queen Beds)' },
@@ -143,8 +143,8 @@ const ROOM_CARDS: RoomCard[] = [
       { icon: 'fa-square-parking', label: 'Ample Paved Parking' },
     ],
     thumbs: [
-      { file: 'bedroom_master.jpg', caption: 'Master Bed', title: 'Master Bedroom', src: '/assets/images/bedroom_master.jpg' },
-      { file: 'bedroom_second.jpg', caption: 'Bedroom 2', title: 'Bedroom 2', src: '/assets/images/bedroom_second.jpg' },
+      { file: 'bedroom_master.jpg', caption: 'Master Bed', title: 'Master Bedroom', src: '/assets/images/room1_bed_showcase.jpg' },
+      { file: 'bedroom_second.jpg', caption: 'Bedroom 2', title: 'Bedroom 2', src: '/assets/images/bedroom_second_bed.jpg' },
       { file: 'living_room.jpg', caption: 'Living Room', title: 'Living Room', src: '/assets/images/living_room.jpg' },
       { file: 'dining_area.jpg', caption: 'Dining', title: 'Dining Area', src: '/assets/images/dining_area.jpg' },
       { file: 'exterior_villa_v2.jpg', caption: 'Grounds', title: 'Property Grounds', src: '/assets/images/exterior_villa_v2.jpg' },

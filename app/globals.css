@@ -2336,11 +2336,11 @@ ul {
 
 /* Precise focal cropping for Suite covers */
 .suite-cover-room1 {
-  object-position: center 38% !important;
+  object-position: center 50% !important;
 }
 
 .suite-cover-room2 {
-  object-position: center 25% !important;
+  object-position: center 38% !important;
 }
 
 .suite-feature-card:hover .suite-card-cover img {
