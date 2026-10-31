@@ -1,4 +1,4 @@
-import { GALLERY_ITEMS, LOCATION, ROOM_DETAILS } from '@/lib/data';
+import { APPLE_MAPS_URL, GALLERY_ITEMS, GOOGLE_MAPS_URL, LOCATION, ROOM_DETAILS } from '@/lib/data';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
 
 const AMENITIES = [
@@ -34,7 +34,7 @@ export default function StructuredData() {
       addressRegion: 'Western Region',
       addressCountry: 'GH',
     },
-    hasMap: 'https://maps.google.com/?q=Anaji+behind+Nhyira+hotel',
+    hasMap: [GOOGLE_MAPS_URL, APPLE_MAPS_URL],
     amenityFeature: AMENITIES.map((name) => ({ '@type': 'LocationFeatureSpecification', name, value: true })),
     containsPlace: (['room1', 'room2'] as const).map((key) => ({
       '@type': 'Suite',

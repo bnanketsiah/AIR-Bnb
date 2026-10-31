@@ -1,7 +1,14 @@
 // Public URL of the live site. Set NEXT_PUBLIC_SITE_URL in your hosting
 // environment (e.g. https://primesuite.com) so the sitemap, canonical URL and
 // social previews point at the real domain.
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000').replace(/\/$/, '');
+const getSiteUrl = () => {
+  if (process.env.NEXT_PUBLIC_SITE_URL) return process.env.NEXT_PUBLIC_SITE_URL;
+  if (process.env.VERCEL_PROJECT_PRODUCTION_URL) return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
+  return 'http://localhost:3000';
+};
+
+export const SITE_URL = getSiteUrl().replace(/\/$/, '');
 
 export const SITE_NAME = 'Prime Suite – Air BnB Rentals';
 export const SITE_TITLE = 'Prime Suite - Air BnB Rentals | Anaji behind Nhyira hotel';

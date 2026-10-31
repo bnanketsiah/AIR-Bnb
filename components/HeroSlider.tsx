@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import type { RoomKey } from '@/lib/data';
+import { LOCATION, type RoomKey } from '@/lib/data';
 import BookButton from './SiteButtons';
 
 type Slide = {
@@ -128,10 +128,15 @@ export default function HeroSlider() {
           <i className="fa-solid fa-camera"></i>
           <span>100% Real Pictures</span>
         </div>
-        <div className="slider-footer-item">
+        <a
+          href="#location"
+          className="slider-footer-item"
+          style={{ color: 'inherit', textDecoration: 'none' }}
+          title="View Property Location on Map"
+        >
           <i className="fa-solid fa-location-dot"></i>
-          <span className="property-location-text">Anaji behind Nhyira hotel</span>
-        </div>
+          <span className="property-location-text">{LOCATION}</span>
+        </a>
         <div className="slider-footer-item">
           <i className="fa-solid fa-phone"></i>
           <span>0547238675 / 0550638015</span>

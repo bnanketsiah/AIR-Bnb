@@ -21,7 +21,18 @@ export const metadata: Metadata = {
     'car rental Takoradi',
   ],
   alternates: { canonical: '/' },
-  icons: { icon: { url: '/assets/images/logo.svg', type: 'image/svg+xml' } },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/assets/images/logo.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   openGraph: {
     type: 'website',
     url: '/',
@@ -53,6 +64,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
+        {/* Explicit fallback icon links for older browsers and search engines */}
+        <link rel="icon" href="/favicon.ico" sizes="48x48" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         {/* Font Awesome icons */}
         <link
           rel="stylesheet"

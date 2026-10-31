@@ -3,6 +3,9 @@ export const LOCATION = 'Anaji behind Nhyira hotel';
 export const PHONE_1 = '233547238675'; // 0547238675 (Primary)
 export const PHONE_2 = '233550638015'; // 0550638015 (Secondary)
 
+export const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/uWAQCUq3Bdf68vdU8?g_st=iw';
+export const APPLE_MAPS_URL = 'https://maps.apple.com/p/HHM8pQhw6ewZVN';
+
 export type RoomKey = 'room1' | 'room2' | 'both';
 
 export const ROOM_DETAILS: Record<RoomKey, { name: string; features: string; ideal: string }> = {

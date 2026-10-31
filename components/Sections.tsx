@@ -1,4 +1,4 @@
-import { galleryIndex, LOCATION, PHONE_1, PHONE_2, type RoomKey } from '@/lib/data';
+import { APPLE_MAPS_URL, galleryIndex, GOOGLE_MAPS_URL, LOCATION, PHONE_1, PHONE_2, type RoomKey } from '@/lib/data';
 import HeroSlider from './HeroSlider';
 import BookButton, { GalleryButton, GalleryImage } from './SiteButtons';
 
@@ -8,12 +8,12 @@ export function TopBar() {
   return (
     <div className="top-bar" id="topBar">
       <div className="container top-bar-inner">
-        <div className="top-bar-location">
+        <a href="#location" className="top-bar-location" title="View Property Location on Map">
           <i className="fa-solid fa-location-dot"></i>
           <span>
             <strong>LOCATION:</strong> <span className="property-location-text">{LOCATION}</span>
           </span>
-        </div>
+        </a>
         <div className="top-bar-perk">
           <i className="fa-solid fa-car-side"></i>
           <span>Car Rental Available</span>
@@ -383,11 +383,14 @@ export function Location() {
               <div className="location-icon-circle">
                 <i className="fa-solid fa-location-dot"></i>
               </div>
-              <div>
+              <div style={{ flex: 1 }}>
                 <h4>LOCATION:</h4>
                 <p className="property-location-text" style={strongText}>
                   {LOCATION}
                 </p>
+                <div style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)', marginTop: '0.2rem' }}>
+                  Takoradi, Western Region, Ghana
+                </div>
               </div>
             </div>
 
@@ -412,7 +415,43 @@ export function Location() {
               </div>
             </div>
 
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
+            <div style={{ marginTop: '1.25rem' }}>
+              <div
+                style={{
+                  fontSize: '0.8rem',
+                  fontWeight: 700,
+                  color: 'var(--color-navy-deep)',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.5px',
+                  marginBottom: '0.6rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                }}
+              >
+                <i className="fa-solid fa-diamond-turn-right" style={{ color: 'var(--color-gold)' }}></i> Open in Maps &amp; Navigation:
+              </div>
+              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                <a
+                  href={GOOGLE_MAPS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-map-action btn-map-google"
+                >
+                  <i className="fa-solid fa-map-location-dot"></i> Google Maps
+                </a>
+                <a
+                  href={APPLE_MAPS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-map-action btn-map-apple"
+                >
+                  <i className="fa-brands fa-apple"></i> Apple Maps
+                </a>
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem', paddingTop: '1.25rem', borderTop: '1px solid var(--color-border-light)' }}>
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
@@ -441,15 +480,24 @@ export function Location() {
                 {LOCATION}
               </p>
               <p>CONTACTS: 0547238675 / 0550638015</p>
-              <a
-                href="https://maps.google.com/?q=Anaji+behind+Nhyira+hotel"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-open-maps"
-                style={{ marginTop: '1rem' }}
-              >
-                <i className="fa-solid fa-map-location-dot"></i> View on Google Maps
-              </a>
+              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center', marginTop: '1.25rem' }}>
+                <a
+                  href={GOOGLE_MAPS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-open-maps"
+                >
+                  <i className="fa-solid fa-map-location-dot"></i> Google Maps
+                </a>
+                <a
+                  href={APPLE_MAPS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-open-maps"
+                >
+                  <i className="fa-brands fa-apple"></i> Apple Maps
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -547,9 +595,27 @@ export function Footer() {
               <div className="footer-contact-items">
                 <div className="footer-contact-row">
                   <i className="fa-solid fa-location-dot"></i>
-                  <span>
+                  <div>
                     <strong>LOCATION:</strong> <span className="property-location-text">{LOCATION}</span>
-                  </span>
+                    <div style={{ marginTop: '0.4rem', display: 'flex', gap: '0.85rem', fontSize: '0.85rem' }}>
+                      <a
+                        href={GOOGLE_MAPS_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: 'var(--color-gold-light)', textDecoration: 'underline', display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
+                      >
+                        <i className="fa-solid fa-map-location-dot"></i> Google Maps
+                      </a>
+                      <a
+                        href={APPLE_MAPS_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: 'var(--color-gold-light)', textDecoration: 'underline', display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
+                      >
+                        <i className="fa-brands fa-apple"></i> Apple Maps
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div className="footer-contact-row">
                   <i className="fa-solid fa-phone"></i>
